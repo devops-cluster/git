@@ -1,8 +1,16 @@
 BASIC GIT COMMANDS
-
+git --version           = to check the git version.
 git init                = to initiate the git tracking thw working directory.
-git add                 = to add the changes to staging area.
+git add .               = to add all the changes to staging area.
+git add filename        = to add a specific file to the staging area.
 git commit -m "message" = to commit the changes to the local repo.
 git status              = to check the git working directory status.
 git log                 = to check the git commit logs.
 git log --oneline       = to check the git commit logs in oneline.
+git --ammend            = to change the message of the latest/last commit message.
+git tag -a tagname commitid -m "message"  = to add tags to any commit by its commit id.
+git show tagname        = to display changes in a particular tag name.
+
+git clone url           = to clone the remote repo to a local repo.
+git remote add origin url = to add origin remote repo.
+git remote -v           = to list origin
