@@ -9,10 +9,12 @@ git log                 = to check the git commit logs.
 git log --oneline       = to check the git commit logs in oneline.
 git --ammend            = to change the message of the latest/last commit message.
 git tag -a (tagname) commitid -m "message"  = to add tags to any commit by its commit id.
-git show (tagname)        = to display changes in a particular tag name.
+git tag -l              = to display the all the list of tags.
+git show (tagname)      = to display changes in a particular tag name.
 
 git clone (url)           = to clone the remote repo to a local repo.
 git remote add (origin) (url) = to add origin remote repo.
 git remote -v           = to list origin
+git fetch               = to fetch any changes from the remote repo.
 
 git push (origin) (master)
