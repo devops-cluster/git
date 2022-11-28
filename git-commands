@@ -44,7 +44,14 @@ git fetch                       = to fetch any changes from the remote repo.
 git clone (url)                 = to clone the remote repo to a local repo.
 
 **********************************************************
-GIT COMMANDS TO MERGE THE BRANCHES
+GIT COMMANDS TO MERGE THE BRANCHES AND RESOLVE CONFLICT
 **********************************************************
 git merge (branch name)         = to merge other branch into the current branch.
-git merge --abort               = to abort the merge process to before merge state.
+git merge --abort               = to abort the merge process to before merge state in the event of conflict.
+
+
+**********************************************************
+GIT COMMANDS TO REVERT AND RESET
+**********************************************************
+
+
