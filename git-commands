@@ -1,10 +1,11 @@
+**********************************************************
 BASIC GIT COMMANDS
 **********************************************************
-sudo apt install git            = to install git in debian/ubuntu.
-git --version                   = to check the git version.
-git init                        = to initiate the git tracking in the working directory.
+sudo apt install git                             = to install git in debian/ubuntu.
+git --version                                    = to check the git version.
+git init                                         = to initiate the git tracking in the working directory.
 
-git config --global user.email "email@email.com" = to add the developer email.
+git config --global user.email "dev@email.com" = to add the developer email.
 git config --global user.name "developer name"   = to add the developer name.
 git config --global merge.tool vimdiff           = to add default merge tool.
 
@@ -12,35 +13,38 @@ git status                      = to check for any changes in the working/ stagi
 git add (filename)              = to add a specific file to the staging area.
 git add .                       = to add all the changes in the working directory to staging area.
 git commit -m "commit message"  = to commit the changes to the local repo.
-git --ammend                    = to change the message of the latest/last commit message.
+
 git log                         = to check the git commit logs in the current branch.
 git log --oneline               = to check the git commit logs in oneline.
 git log --oneline (branch)      = to check the git commit logs in oneline for specific branch.
 
+git --ammend                                = to modify the most recent commit message.
 git tag -a (tagname) commitid -m "message"  = to add tags to any commit by its commit id.
-git tag -l                      = to display all the tags.
-git show (tagname)              = to display changes in a particular tag name.
+git tag -l                                  = to display all the tags.
+git show (tagname)                          = to display changes in a particular tag name.
 
 
+**********************************************************
 GIT COMMANDS TO CREATE NEW BRANCH
 **********************************************************
 git branch (branch)             = to create new branch.
 git checkout (branch)           = to navigate to a specific branch.
 
 
+**********************************************************
 GIT COMMANDS TO WORK WITH REMOTE REPO
 **********************************************************
 git remote add (origin) (url)   = to add remote repo.
-git (origin) pull               = to pull the remote repo to the local repo.
-git (origin) push               = to push the l repo to the remote repo.
+git remote -v                   = to list all the (origin).
 
+git pull (origin)               = to pull the remote repo to the local repo.
+git push (origin)               = to push the local repo to the remote repo.
 
-
-
+git fetch                       = to fetch any changes from the remote repo.
 git clone (url)                 = to clone the remote repo to a local repo.
 
-git remote -v                   = to list origin
-git fetch                       = to fetch any changes from the remote repo.
-
-git push (origin) (master)
-git fetch               = to check if any changes are there in the remote repo.
+**********************************************************
+GIT COMMANDS TO MERGE THE BRANCHES
+**********************************************************
+git merge (branch name)         = to merge other branch into the current branch.
+git merge --abort               = to abort the merge process to before merge state.
