@@ -56,10 +56,7 @@ git merge --abort               = to abort the merge process to before merge sta
 **********************************************************
 GIT COMMANDS TO REBASE THE BRANCHES AND RESOLVE CONFLICT
 **********************************************************
-
-
-
-
+git rebase (branch name)      = to add the incoming files to the base.
 
 
 **********************************************************
