@@ -9,13 +9,15 @@ git config --global user.email "dev@email.com" = to add the developer email.
 git config --global user.name "developer name"   = to add the developer name.
 git config --global merge.tool vimdiff           = to add default merge tool.
 
-git status                      = to check for any changes in the working/ staging directory.
-git add (filename)              = to add a specific file to the staging area.
-git add .                       = to add all the changes in the working directory to staging area.
-git commit -m "commit message"  = to commit the changes to the local repo.
+git status                          = to check for any changes in the working/ staging directory.
+git add (filename)                  = to add a specific file to the staging area.
+git add .                           = to add all the changes in the working directory to staging area.
+git commit -m "commit message"      = to commit the changes to the local repo.
+git commit -a -m "commit message"   = to add and commit to local repo.
 
 git log                         = to check the git commit logs in the current branch.
 git log --oneline               = to check the git commit logs in oneline.
+git log --online --graph        = to check the git commit logs in oneline with graph.
 git log --oneline (branch)      = to check the git commit logs in oneline for specific branch.
 
 git --ammend                                = to modify the most recent commit message.
@@ -43,6 +45,7 @@ git push (origin)               = to push the local repo to the remote repo.
 git fetch                       = to fetch any changes from the remote repo.
 git clone (url)                 = to clone the remote repo to a local repo.
 
+
 **********************************************************
 GIT COMMANDS TO MERGE THE BRANCHES AND RESOLVE CONFLICT
 **********************************************************
@@ -51,7 +54,17 @@ git merge --abort               = to abort the merge process to before merge sta
 
 
 **********************************************************
-GIT COMMANDS TO REVERT AND RESET
+GIT COMMANDS TO REBASE THE BRANCHES AND RESOLVE CONFLICT
 **********************************************************
 
+
+
+
+
+
+**********************************************************
+GIT COMMANDS TO REVERT AND RESET
+**********************************************************
+git revert (commitid)          = to revert back in time with a new commitid.
+git reset --hard (commitid)    = to revert back in time without a commitid. (MUST USE WITH CAUTION)
 
